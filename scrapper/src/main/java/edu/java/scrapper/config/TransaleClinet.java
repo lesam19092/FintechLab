@@ -1,11 +1,10 @@
 package edu.java.scrapper.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
-public class GitHubClient {
+public class TransaleClinet {
     private WebClient webClient;
 
     // @Value("${app.yaUrl}")
@@ -15,7 +14,7 @@ public class GitHubClient {
     private String folderId = System.getenv("folderId");
     private final WebClient.Builder webClientBuilder = WebClient.builder();
 
-    public GitHubClient() {
+    public TransaleClinet() {
         System.out.println(baseUrl);
         webClient = webClientBuilder.baseUrl(baseUrl)                   //get ENV
             .defaultHeaders(h -> h.setBearerAuth(IAM_TOKEN))
