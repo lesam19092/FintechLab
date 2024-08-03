@@ -46,7 +46,6 @@
     </properties>
 
     <modules>
-        <module>bot</module>
         <module>scrapper</module>
     </modules>
 
