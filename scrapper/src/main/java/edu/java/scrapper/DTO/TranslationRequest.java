@@ -8,10 +8,15 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
 public class TranslationRequest {
     private InetAddress ipAddress;
     private String inputString;
-    private String TranslationRequest;
+    private String translatedString;
+
+    public TranslationRequest(InetAddress ipAddress, String inputString, String translatedString) {
+        this.ipAddress = ipAddress;
+        this.inputString = inputString;
+        this.translatedString = translatedString;
+    }
 }

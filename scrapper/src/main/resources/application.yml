@@ -1,15 +1,19 @@
 app:
-  scheduler:
-    enable: true
-    interval: 10s
-    force-check-delay: 10s
+  yaUrl: "https://translate.api.cloud.yandex.net/translate/v2/translate"
 
 spring:
   application:
     name: scrapper
+  liquibase:
+    enabled: false
+
+
 
 server:
-  port: 8080
+  port: 7070
 
 logging:
   config: classpath:log4j2-plain.xml
+
+
+

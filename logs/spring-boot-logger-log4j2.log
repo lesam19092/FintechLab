@@ -1,0 +1,15 @@
+2024-08-04 12:13:57,539 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-08-04 12:13:57,593 INFO o.s.b.StartupInfoLogger [restartedMain] Starting ScrapperApplication using Java 21.0.2 with PID 10788 (C:\Users\danil\Desktop\java-course-2023-backend-template\scrapper\target\classes started by danil in C:\Users\danil\Desktop\java-course-2023-backend-template)
+2024-08-04 12:13:57,598 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-04 12:13:57,660 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-04 12:13:57,661 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-04 12:13:59,539 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7070 (http)
+2024-08-04 12:13:59,556 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7070"]
+2024-08-04 12:13:59,560 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-04 12:13:59,560 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-08-04 12:13:59,632 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-04 12:13:59,633 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1971 ms
+2024-08-04 12:14:00,738 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-08-04 12:14:00,771 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7070"]
+2024-08-04 12:14:00,803 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7070 (http) with context path ''
+2024-08-04 12:14:00,820 INFO o.s.b.StartupInfoLogger [restartedMain] Started ScrapperApplication in 4.017 seconds (process running for 5.559)

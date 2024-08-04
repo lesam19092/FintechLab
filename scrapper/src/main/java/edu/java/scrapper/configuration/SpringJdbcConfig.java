@@ -7,7 +7,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
 public class SpringJdbcConfig {
-
     private String postgres = "postgres";
 
     @Bean
