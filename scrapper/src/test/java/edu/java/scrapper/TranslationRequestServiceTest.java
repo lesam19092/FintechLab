@@ -1,9 +1,9 @@
 package edu.java.scrapper;
 
-import edu.java.scrapper.DATABASE.TranslationRequestService;
-import edu.java.scrapper.DTO.TranslationRequest;
+import edu.java.scrapper.dto.TranslationRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import edu.java.scrapper.services.TranslationRequestService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -19,9 +19,9 @@ public class TranslationRequestServiceTest {
     @Test
     public void testAddRequestRepositoryOnSuccess() throws UnknownHostException {
         TranslationRequest request = new TranslationRequest(InetAddress.getByName("0:0:0:0:0:0:0:1"), "привет", "hi");
-        Mockito.doNothing().when(translationRequestService).add(request);
-        translationRequestService.add(request);
-        Mockito.verify(translationRequestService).add(request);
+        Mockito.doNothing().when(translationRequestService).addTranslation(request);
+        translationRequestService.addTranslation(request);
+        Mockito.verify(translationRequestService).addTranslation(request);
     }
 
 }

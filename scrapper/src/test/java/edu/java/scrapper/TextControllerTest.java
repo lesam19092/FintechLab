@@ -1,8 +1,8 @@
 package edu.java.scrapper;
 
-import edu.java.scrapper.DATABASE.TranslationRequestRepository;
-import edu.java.scrapper.config.TranslateClinet;
+import edu.java.scrapper.clients.TranslateClinet;
 import edu.java.scrapper.controller.TextController;
+import edu.java.scrapper.services.TranslationRequestService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -21,7 +21,7 @@ public class TextControllerTest {
     private TranslateClinet translateClinet;
 
     @Mock
-    private TranslationRequestRepository translationRequestRepository;
+    private  TranslationRequestService translationRequestRepository;
 
     private TextController textController;
     private MockMvc mockMvc;
