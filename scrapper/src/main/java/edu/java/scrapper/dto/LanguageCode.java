@@ -1,4 +1,4 @@
-package edu.java.scrapper.DTO;
+package edu.java.scrapper.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

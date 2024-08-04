@@ -1,7 +1,6 @@
-package edu.java.scrapper.DTO;
+package edu.java.scrapper.dto;
 
 import java.net.InetAddress;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

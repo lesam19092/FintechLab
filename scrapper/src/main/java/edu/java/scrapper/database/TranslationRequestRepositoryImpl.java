@@ -1,6 +1,6 @@
-package edu.java.scrapper.DATABASE;
+package edu.java.scrapper.database;
 
-import edu.java.scrapper.DTO.TranslationRequest;
+import edu.java.scrapper.dto.TranslationRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Repository;
@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 @RequiredArgsConstructor
-public class TranslationRequestService implements TranslationRequestRepository {
+public class TranslationRequestRepositoryImpl implements TranslationRequestRepository {
 
     private final JdbcClient jdbcClient;
 
