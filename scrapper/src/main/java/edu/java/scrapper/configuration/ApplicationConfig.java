@@ -6,6 +6,10 @@ import org.springframework.validation.annotation.Validated;
 @Validated
 @ConfigurationProperties(prefix = "app", ignoreUnknownFields = false)
 public record ApplicationConfig(
-    String yaUrl
+    String yaUrl,
+    String iamToken,
+    String folderId
 ) {
 }
+//TODO добавить в apl yml folderid iam_token
+

@@ -9,6 +9,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 public class SpringJdbcConfig {
     private String postgres = "postgres";
 
+    //TODO сделать черзе yml
     @Bean
     public DataSource myPostgresDataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
