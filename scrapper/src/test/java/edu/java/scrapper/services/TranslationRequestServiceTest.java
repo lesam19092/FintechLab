@@ -1,9 +1,8 @@
-package edu.java.scrapper;
+package edu.java.scrapper.services;
 
 import edu.java.scrapper.dto.TranslationRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-import edu.java.scrapper.services.TranslationRequestService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;

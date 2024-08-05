@@ -1,7 +1,6 @@
-package edu.java.scrapper;
+package edu.java.scrapper.controller;
 
 import edu.java.scrapper.clients.TranslateClinet;
-import edu.java.scrapper.controller.TextController;
 import edu.java.scrapper.services.TranslationRequestService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,7 +20,7 @@ public class TextControllerTest {
     private TranslateClinet translateClinet;
 
     @Mock
-    private  TranslationRequestService translationRequestRepository;
+    private TranslationRequestService translationRequestRepository;
 
     private TextController textController;
     private MockMvc mockMvc;
@@ -29,7 +28,7 @@ public class TextControllerTest {
     @BeforeEach
     public void setUp() {
         MockitoAnnotations.openMocks(this);
-        textController = new TextController(translateClinet, translationRequestRepository);
+        textController = new TextController(translationRequestRepository);
         mockMvc = MockMvcBuilders.standaloneSetup(textController).build();
     }
 

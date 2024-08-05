@@ -1,23 +1,15 @@
-package edu.java.scrapper;
+package edu.java.scrapper.clients;
 
-import edu.java.scrapper.clients.TranslateClinet;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-@ExtendWith(MockitoExtension.class)
-public class TranslateClientTest {
+@SpringBootTest @ExtendWith(MockitoExtension.class) public class TranslateClientTest {
 
-    @Autowired
-    private TranslateClinet translateClinet;
-
+    @Autowired private TranslateClinet translateClinet;
 
     @Test
     public void testTranslate_Success() throws Exception {

@@ -1,7 +1,8 @@
-package edu.java.scrapper;
+package edu.java.scrapper.integration;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
+
 import liquibase.database.Database;
 import liquibase.exception.LiquibaseException;
 import org.junit.jupiter.api.Test;
