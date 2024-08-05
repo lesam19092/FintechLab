@@ -1,6 +1,7 @@
 app:
   yaUrl: "https://translate.api.cloud.yandex.net/translate/v2/translate"
-
+  folderId: ${folderId}
+  iam-token: ${IAM_TOKEN}
 spring:
   application:
     name: scrapper

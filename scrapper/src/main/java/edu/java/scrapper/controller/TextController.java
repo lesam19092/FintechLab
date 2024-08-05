@@ -11,9 +11,13 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 
 @Controller
 @AllArgsConstructor
@@ -47,12 +51,26 @@ public class TextController {
         String translatedText = translationRequestRepository.getTranslation(sourceLanguage, targetLanguage, text);
 
         TranslationRequest translationRequest =
-            new TranslationRequest(clientIp, text, translatedText);//TODO посмотреть , если запрос не выполнится
+            new TranslationRequest(clientIp, text, translatedText);
         translationRequestRepository.addTranslation(translationRequest);
         model.addAttribute("sourceText", text);
         model.addAttribute("translatedText", translatedText);
         return "main";
     }
+
+    /*@ExceptionHandler(HttpClientErrorException.class)
+    @PostMapping
+    public String handleException(HttpClientErrorException exception) {
+        return "error";
+    }
+
+    @ExceptionHandler(HttpServerErrorException.class)
+    @PostMapping
+    public String handleException(HttpServerErrorException exception) {
+        return "error";
+    }*/
+    //TODO fix bagg
+
 
     private InetAddress getClientIp(HttpServletRequest request) {
         String remoteAddr = "";

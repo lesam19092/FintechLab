@@ -29,6 +29,7 @@ public class TranslateClinet {
     private final RestTemplate restTemplate = new RestTemplate();
 
     public TranslateClinet(ApplicationConfig applicationConfig) {
+
         this.applicationConfig = applicationConfig;
     }
 

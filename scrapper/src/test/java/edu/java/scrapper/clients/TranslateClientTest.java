@@ -7,9 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest @ExtendWith(MockitoExtension.class) public class TranslateClientTest {
+@SpringBootTest
+@ExtendWith(MockitoExtension.class)
+public class TranslateClientTest {
 
-    @Autowired private TranslateClinet translateClinet;
+    @Autowired
+    private TranslateClinet translateClinet;
 
     @Test
     public void testTranslate_Success() throws Exception {
@@ -17,6 +20,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
         String targetLanguage = "ru";
         String text = "Hello world";
         String translatedText = "Привет, мир";
+
+
+        //TODO починить тест
+        System.out.println( translateClinet.getApplicationConfig().iamToken());
 
         String translation = translateClinet.translate(sourceLanguage, targetLanguage, text);
 

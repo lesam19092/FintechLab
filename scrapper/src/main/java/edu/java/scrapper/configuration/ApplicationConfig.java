@@ -11,5 +11,4 @@ public record ApplicationConfig(
     String folderId
 ) {
 }
-//TODO добавить в apl yml folderid iam_token
 
