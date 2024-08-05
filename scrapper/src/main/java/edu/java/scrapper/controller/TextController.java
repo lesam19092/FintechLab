@@ -1,15 +1,14 @@
 package edu.java.scrapper.controller;
 
-import edu.java.scrapper.clients.TranslateClinet;
 import edu.java.scrapper.dto.LanguageCode;
 import edu.java.scrapper.dto.TranslationRequest;
 import edu.java.scrapper.services.TranslationRequestService;
 import jakarta.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.concurrent.ExecutionException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.configurationprocessor.json.JSONException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @AllArgsConstructor
 @Slf4j
 public class TextController {
-    private final TranslateClinet translateClinet;
+
     private final TranslationRequestService translationRequestRepository;
 
     @RequestMapping("/")
@@ -36,7 +35,7 @@ public class TextController {
         @RequestParam("textForTranslation") String text,
         Model model,
         HttpServletRequest request
-    ) throws JSONException {
+    ) throws ExecutionException, InterruptedException {
 
         model.addAttribute("languages", LanguageCode.values());
         InetAddress clientIp = getClientIp(request);
@@ -45,7 +44,7 @@ public class TextController {
         } else {
             log.warn("Не удалось определить IP-адрес клиента.");
         }
-        String translatedText = translateClinet.translate(sourceLanguage, targetLanguage, text);
+        String translatedText = translationRequestRepository.getTranslation(sourceLanguage, targetLanguage, text);
 
         TranslationRequest translationRequest =
             new TranslationRequest(clientIp, text, translatedText);//TODO посмотреть , если запрос не выполнится
