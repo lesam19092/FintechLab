@@ -1,21 +1,20 @@
-2024-08-06 13:53:20,419 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
-2024-08-06 13:53:20,499 INFO o.s.b.StartupInfoLogger [restartedMain] Starting ScrapperApplication using Java 21.0.2 with PID 16800 (C:\Users\danil\Desktop\java-course-2023-backend-template\scrapper\target\classes started by danil in C:\Users\danil\Desktop\java-course-2023-backend-template)
-2024-08-06 13:53:20,507 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
-2024-08-06 13:53:20,623 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-06 13:53:20,624 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-06 13:53:23,646 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7070 (http)
-2024-08-06 13:53:23,662 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7070"]
-2024-08-06 13:53:23,666 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2024-08-06 13:53:23,666 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.18]
-2024-08-06 13:53:23,730 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2024-08-06 13:53:23,731 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3106 ms
-2024-08-06 13:53:24,800 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
-2024-08-06 13:53:24,827 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7070"]
-2024-08-06 13:53:24,851 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7070 (http) with context path ''
-2024-08-06 13:53:24,870 INFO o.s.b.StartupInfoLogger [restartedMain] Started ScrapperApplication in 5.43 seconds (process running for 7.318)
-2024-08-06 13:53:24,944 INFO o.a.j.l.DirectJDKLog [http-nio-7070-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-06 13:53:24,944 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Initializing Servlet 'dispatcherServlet'
-2024-08-06 13:53:24,945 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Completed initialization in 1 ms
-2024-08-06 13:53:46,333 INFO e.j.s.c.TextController [http-nio-7070-exec-2] IP-адрес клиента: 127.0.0.1
-2024-08-06 13:53:55,817 INFO e.j.s.c.TextController [http-nio-7070-exec-3] Исходный и целевой языки не могут быть одинаковыми
-2024-08-06 13:54:09,535 INFO e.j.s.c.TextController [http-nio-7070-exec-6] IP-адрес клиента: 127.0.0.1
+2024-08-06 14:37:29,088 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-08-06 14:37:29,174 INFO o.s.b.StartupInfoLogger [restartedMain] Starting ScrapperApplication using Java 21.0.2 with PID 14640 (C:\Users\danil\Desktop\java-course-2023-backend-template\scrapper\target\classes started by danil in C:\Users\danil\Desktop\java-course-2023-backend-template)
+2024-08-06 14:37:29,180 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-06 14:37:29,320 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-06 14:37:29,361 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-06 14:37:32,776 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7070 (http)
+2024-08-06 14:37:32,807 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7070"]
+2024-08-06 14:37:32,811 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-06 14:37:32,812 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-08-06 14:37:32,938 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-06 14:37:32,939 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3577 ms
+2024-08-06 14:37:34,559 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2024-08-06 14:37:34,604 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7070"]
+2024-08-06 14:37:34,645 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7070 (http) with context path ''
+2024-08-06 14:37:34,665 INFO o.s.b.StartupInfoLogger [restartedMain] Started ScrapperApplication in 7.012 seconds (process running for 9.372)
+2024-08-06 14:37:45,689 INFO o.a.j.l.DirectJDKLog [http-nio-7070-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-06 14:37:45,690 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-06 14:37:45,692 INFO o.s.w.s.FrameworkServlet [http-nio-7070-exec-1] Completed initialization in 2 ms
+2024-08-06 14:37:45,783 INFO e.j.s.c.TextController [http-nio-7070-exec-1] IP-адрес клиента: 0:0:0:0:0:0:0:1
+2024-08-06 14:37:47,562 INFO e.j.s.c.TextController [http-nio-7070-exec-1] http 200 hi my friend

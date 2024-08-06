@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 public class TranslateResponse {
 
-   private List<TranslatedWord> translations;
+    private List<TranslatedWord> translations;
 
 }

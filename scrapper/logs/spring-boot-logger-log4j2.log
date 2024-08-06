@@ -1,0 +1,68 @@
+2024-08-06 10:48:38,536 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2024-08-06 10:48:38,613 INFO o.s.b.StartupInfoLogger [main] Starting TranslateClientTest using Java 21.0.2 with PID 9336 (started by danil in C:\Users\danil\Desktop\java-course-2023-backend-template\scrapper)
+2024-08-06 10:48:38,621 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-06 10:48:44,305 INFO o.s.b.StartupInfoLogger [main] Started TranslateClientTest in 6.843 seconds (process running for 11.113)
+2024-08-06 10:48:47,769 INFO o.s.m.w.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2024-08-06 10:48:47,770 INFO o.s.w.s.FrameworkServlet [main] Initializing Servlet ''
+2024-08-06 10:48:47,778 INFO o.s.w.s.FrameworkServlet [main] Completed initialization in 1 ms
+2024-08-06 10:48:48,078 INFO e.j.s.c.TextController [main] IP-адрес клиента: 127.0.0.1
+2024-08-06 10:48:48,188 INFO o.s.t.c.s.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [edu.java.scrapper.integration.ExampleIntegrationTest]: ExampleIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-06 10:48:48,246 INFO o.s.b.t.c.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration edu.java.scrapper.ScrapperApplication for test class edu.java.scrapper.integration.ExampleIntegrationTest
+2024-08-06 10:48:48,406 INFO o.t.i.PullPolicy [main] Image pull policy will be performed by: DefaultPullPolicy()
+2024-08-06 10:48:48,418 INFO o.t.u.ImageNameSubstitutor [main] Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-08-06 10:48:49,460 INFO o.t.d.DockerClientProviderStrategy [main] Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-08-06 10:48:50,383 INFO o.t.d.DockerClientProviderStrategy [main] Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+2024-08-06 10:48:50,389 INFO o.t.DockerClientFactory [main] Docker host IP address is localhost
+2024-08-06 10:48:50,441 INFO o.t.DockerClientFactory [main] Connected to docker: 
+  Server Version: 25.0.3
+  API Version: 1.44
+  Operating System: Docker Desktop
+  Total Memory: 7407 MB
+2024-08-06 10:48:50,577 INFO o.t.c.GenericContainer [main] Creating container for image: testcontainers/ryuk:0.6.0
+2024-08-06 10:48:50,936 INFO o.t.u.RegistryAuthLocator [main] Credential helper/store (docker-credential-desktop) does not have credentials for https://index.docker.io/v1/
+2024-08-06 10:48:51,418 INFO o.t.c.GenericContainer [main] Container testcontainers/ryuk:0.6.0 is starting: 62223b56ac8510e7db02db574c8c199422a1b2b0193e605c8c6b1e688a388d67
+2024-08-06 10:48:53,217 INFO o.t.c.GenericContainer [main] Container testcontainers/ryuk:0.6.0 started in PT2.6383379S
+2024-08-06 10:48:53,228 INFO o.t.u.RyukResourceReaper [main] Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-08-06 10:48:53,229 INFO o.t.DockerClientFactory [main] Checking the system...
+2024-08-06 10:48:53,231 INFO o.t.DockerClientFactory [main] ✔︎ Docker server version should be at least 1.6.0
+2024-08-06 10:48:53,233 INFO o.t.c.GenericContainer [main] Creating container for image: postgres:16
+2024-08-06 10:48:53,394 INFO o.t.c.GenericContainer [main] Container postgres:16 is starting: 2100ed1f5cb8cb7096e3c9fedeb1c811d4493a14cd7fa2e78c0bd7038280aeb2
+2024-08-06 10:48:55,948 INFO o.t.c.GenericContainer [main] Container postgres:16 started in PT2.7148009S
+2024-08-06 10:48:55,950 INFO o.t.c.JdbcDatabaseContainer [main] Container is started (JDBC URL: jdbc:postgresql://localhost:4891/requests?loggerLevel=OFF)
+2024-08-06 10:48:56,992 INFO l.l.c.JavaLogger [main] Set default schema name to public
+2024-08-06 10:48:57,664 INFO l.l.c.JavaLogger [main] Creating database history table with name: public.databasechangelog
+2024-08-06 10:48:57,753 INFO l.l.c.JavaLogger [main] Reading from public.databasechangelog
+2024-08-06 10:48:57,929 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-08-06 10:48:57,933 INFO l.l.c.JavaLogger [main] Using deploymentId: 2941337932
+2024-08-06 10:48:57,940 INFO l.l.c.JavaLogger [main] Reading from public.databasechangelog
+2024-08-06 10:48:58,022 INFO l.l.c.JavaLogger [main] Custom SQL executed
+2024-08-06 10:48:58,026 INFO l.l.c.JavaLogger [main] ChangeSet schema.sql::raw::includeAll ran successfully in 39ms
+2024-08-06 10:48:58,049 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-08-06 10:48:58,049 INFO l.l.c.JavaLogger [main] Run:                          1
+2024-08-06 10:48:58,050 INFO l.l.c.JavaLogger [main] Previously run:               0
+2024-08-06 10:48:58,051 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-08-06 10:48:58,052 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-08-06 10:48:58,052 INFO l.l.c.JavaLogger [main] Total change sets:            1
+2024-08-06 10:48:58,053 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-08-06 10:48:58,059 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-08-06 10:48:58,068 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-08-06 10:48:58,071 INFO l.l.c.JavaLogger [main] Command execution complete
+2024-08-06 10:48:58,078 INFO o.s.b.d.r.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2024-08-06 10:48:58,168 INFO o.s.b.StartupInfoLogger [main] Starting ExampleIntegrationTest using Java 21.0.2 with PID 9336 (started by danil in C:\Users\danil\Desktop\java-course-2023-backend-template\scrapper)
+2024-08-06 10:48:58,170 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-08-06 10:48:59,523 INFO o.s.b.StartupInfoLogger [main] Started ExampleIntegrationTest in 1.445 seconds (process running for 26.331)
+2024-08-06 10:48:59,610 INFO l.l.c.JavaLogger [main] Set default schema name to public
+2024-08-06 10:48:59,710 INFO l.l.c.JavaLogger [main] Reading from public.databasechangelog
+2024-08-06 10:48:59,761 INFO l.l.c.JavaLogger [main] Successfully acquired change log lock
+2024-08-06 10:48:59,764 INFO l.l.c.JavaLogger [main] Using deploymentId: 2941339764
+2024-08-06 10:48:59,768 INFO l.l.c.JavaLogger [main] Reading from public.databasechangelog
+2024-08-06 10:48:59,778 INFO l.l.c.JavaLogger [main] UPDATE SUMMARY
+2024-08-06 10:48:59,779 INFO l.l.c.JavaLogger [main] Run:                          0
+2024-08-06 10:48:59,780 INFO l.l.c.JavaLogger [main] Previously run:               1
+2024-08-06 10:48:59,780 INFO l.l.c.JavaLogger [main] Filtered out:                 0
+2024-08-06 10:48:59,781 INFO l.l.c.JavaLogger [main] -------------------------------
+2024-08-06 10:48:59,782 INFO l.l.c.JavaLogger [main] Total change sets:            1
+2024-08-06 10:48:59,782 INFO l.l.c.JavaLogger [main] Update summary generated
+2024-08-06 10:48:59,783 INFO l.l.c.JavaLogger [main] Update command completed successfully.
+2024-08-06 10:48:59,791 INFO l.l.c.JavaLogger [main] Successfully released change log lock
+2024-08-06 10:48:59,794 INFO l.l.c.JavaLogger [main] Command execution complete
