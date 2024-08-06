@@ -40,7 +40,18 @@ public class TextController {
         HttpServletRequest request
     ) throws ExecutionException, InterruptedException {
 
+
+
+
         model.addAttribute("languages", LanguageCode.values());
+
+        if (sourceLanguage.equals(targetLanguage)) {
+
+            log.info("Исходный и целевой языки не могут быть одинаковыми");
+            return "redirect:/error";
+        }
+
+
         InetAddress clientIp = getClientIp(request);
         if (clientIp != null) {
             log.info("IP-адрес клиента: {}", clientIp.getHostAddress());
