@@ -13,7 +13,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.HttpClientErrorException;
@@ -58,19 +57,28 @@ public class TextController {
         return "main";
     }
 
-    /*@ExceptionHandler(HttpClientErrorException.class)
-    @PostMapping
-    public String handleException(HttpClientErrorException exception) {
-        return "error";
+    @ExceptionHandler(HttpClientErrorException.class)
+    public String handleClientError(
+        HttpClientErrorException
+            exception
+    ) {
+
+        if (exception.getStatusCode().value() == 400) {
+            log.info("http 400 текст не может быть пустым");
+        }
+        if (exception.getStatusCode().value() == 401) {
+            log.info("htto 401 не авторизирован");
+        }
+        return "redirect:/error";
     }
 
     @ExceptionHandler(HttpServerErrorException.class)
-    @PostMapping
-    public String handleException(HttpServerErrorException exception) {
-        return "error";
-    }*/
-    //TODO fix bagg
+    public String handleServerError(HttpServerErrorException exception) {
 
+        log.info(exception.getMessage());
+
+        return "redirect:/error";
+    }
 
     private InetAddress getClientIp(HttpServletRequest request) {
         String remoteAddr = "";

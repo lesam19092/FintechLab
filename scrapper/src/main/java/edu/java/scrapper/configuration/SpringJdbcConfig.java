@@ -18,6 +18,4 @@ public class SpringJdbcConfig {
         ds.setPassword(postgres);
         return ds;
     }
-
-    //TODO yml
 }

@@ -33,6 +33,8 @@ public class TranslateClinet {
         this.applicationConfig = applicationConfig;
     }
 
+
+
     public String translate(String sourceLanguage, String targetLanguage, String text)
         throws JSONException {
 
