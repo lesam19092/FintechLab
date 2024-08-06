@@ -72,7 +72,6 @@ public class TextController {
         HttpClientErrorException
             exception
     ) {
-
         if (exception.getStatusCode().value() == 400) {
             log.info("http 400 текст не может быть пустым");
         }

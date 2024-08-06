@@ -1,6 +1,6 @@
 package edu.java.scrapper.services;
 
-import edu.java.scrapper.clients.TranslateClinet;
+import edu.java.scrapper.clients.TranslateClient;
 import edu.java.scrapper.database.TranslationRequestRepository;
 import edu.java.scrapper.dto.TranslationRequest;
 import java.util.concurrent.ExecutionException;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class TranslationRequestService {
 
     private final TranslationRequestRepository translationRequestRepository;
-    private final TranslateClinet translateClinet;
+    private final TranslateClient translateClinet;
 
     public void addTranslation(TranslationRequest entity) {
 

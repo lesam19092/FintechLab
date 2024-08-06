@@ -22,13 +22,13 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 @Getter
-public class TranslateClinet {
+public class TranslateClient {
 
     private final ApplicationConfig applicationConfig;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    public TranslateClinet(ApplicationConfig applicationConfig) {
+    public TranslateClient(ApplicationConfig applicationConfig) {
 
         this.applicationConfig = applicationConfig;
     }
